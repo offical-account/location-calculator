@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>location</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Location Radius Checker</h1>
+        <form id="distanceForm">
+            <label for="ruleLatitude">Rule Latitude:</label>
+            <input type="text" id="ruleLatitude" name="ruleLatitude" required><br>
+
+            <label for="ruleLongitude">Rule Longitude:</label>
+            <input type="text" id="ruleLongitude" name="ruleLongitude" required><br>
+
+            <label for="extLatitude">External Latitude:</label>
+            <input type="text" id="extLatitude" name="extLatitude" required><br>
+
+            <label for="extLongitude">External Longitude:</label>
+            <input type="text" id="extLongitude" name="extLongitude" required><br>
+
+            <label for="radius">Radius (in KM):</label>
+            <input type="text" id="radius" name="radius" required><br>
+
+            <button type="submit">Check Distance</button>
+        </form>
+
+        <div id="result"></div>
+    </div>
+  
+      <div class="current-location">
+        <h2>Current Location</h2>
+        <p>Latitude: <span id="currentLatitude"></span></p>
+        <p>Longitude: <span id="currentLongitude"></span></p>
+        <button id="getCurrentLocation">Get Current Location</button>
+    </div>
+
+    
+    <script src="app.js"></script>
+</body>
+</html>
